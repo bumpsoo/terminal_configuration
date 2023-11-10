@@ -1,0 +1,16 @@
+[init]
+	defaultBranch = main
+
+[alias]
+	logs = log --color --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr)%C(bold blue)<%an>%Creset' --abbrev-commit
+	co = checkout
+	br = branch
+
+[user]
+	useConfigOnly = true
+
+[includeIf "gitdir:~/work/"]
+	path = ~/work/.gitconfig
+
+[includeIf "gitdir:~/personal/"]
+	path = ~/personal/.gitconfig
