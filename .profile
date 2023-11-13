@@ -4,3 +4,5 @@ alias vim=nvim
 
 alias la='ls -a'
 alias ll='ls -al'
+
+export PATH=$PATH:~/go/bin
