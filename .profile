@@ -6,3 +6,4 @@ alias la='ls -a'
 alias ll='ls -al'
 
 export PATH=$PATH:~/go/bin
+export PATH=$PATH:~/.cache/rebar3/bin
