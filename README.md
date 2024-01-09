@@ -1,20 +1,4 @@
-### from wsl - alpine
-
-running [mini root fs](https://www.alpinelinux.org/downloads/)
-
-```
-wsl --import Alpine 'E:\alpine\' E:\alpine-minirootfs-3.18.4-x86_64.tar
-```
-
-dependencies
-
-```
-apk add neovim tmux git openssh ripgrep curl gcc go
-
-go install golang.org/x/tools/gopls@latest
-```
-
-### dev configuration for alpine linux
+### dev configuration for linux
 
 - neovim (.config/nvim/\*)
 - git (.gitconfig ~/personal/.gitconfig)
