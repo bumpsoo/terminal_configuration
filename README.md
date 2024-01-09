@@ -10,6 +10,6 @@
 - lazy (plugin manager)
 - treesitter
 - telescope
-- tokyonight
+- solarized
 - lspconfig
 - fugitive
