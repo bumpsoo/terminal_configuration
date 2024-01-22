@@ -16,13 +16,30 @@ local config = function()
 
   -- Enable some language servers with the additional
   -- completion capabilities offered by nvim-cmp
-  local servers = { 'gopls', 'erlangls' }
+  local servers = { 'gopls', 'erlangls', 'tsserver'}
   for _, lsp in ipairs(servers) do
     lspconfig[lsp].setup {
       on_attach = on_attach,
       capabilities = capabilities,
     }
   end
+  lspconfig.volar.setup {
+    on_attach = on_attach,
+    capabilities = capabilities,
+    filetypes = {
+      'typescript',
+      'javascript',
+      'javascriptreact',
+      'typescriptreact',
+      'vue',
+      'json'
+    },
+    init_options = {
+      typescript = {
+        tsdk = '/usr/lib/node_modules/typescript/lib'
+      }
+    }
+  }
   local luasnip = require 'luasnip'
   local cmp = require 'cmp'
   cmp.setup {
