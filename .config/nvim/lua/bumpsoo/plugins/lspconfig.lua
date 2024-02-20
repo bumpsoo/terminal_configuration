@@ -80,7 +80,7 @@ return {
   "neovim/nvim-lspconfig",
   dependencies = {
     'hrsh7th/nvim-cmp',
-    'hrsh7yh/cmp-nvim-lsp',
+    'hrsh7th/cmp-nvim-lsp',
     'hrsh7th/cmp-vsnip',
     'hrsh7th/vim-vsnip',
   },
