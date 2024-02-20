@@ -17,3 +17,5 @@ vim.opt.smartindent = true
 vim.opt.expandtab = true
 
 vim.opt.clipboard = "unnamedplus"
+
+vim.opt.swapfile = false
