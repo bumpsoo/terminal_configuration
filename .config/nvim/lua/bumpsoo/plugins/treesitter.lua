@@ -12,8 +12,11 @@ return {
       },
       ensure_installed = {
         "json",
-        "erlang",
         "lua",
+        "javascript",
+        "typescript",
+        "vue",
+        "go",
       },
     })
   end
