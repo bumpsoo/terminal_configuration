@@ -14,5 +14,5 @@ then
 fi
 
 curl -LO https://go.dev/dl/go$GO_VERSION.linux-amd64.tar.gz
-rm -rf /usr/local/go && tar -C /usr/local -xzf go$GO_VERSION.linux-amd64.tar.gz
+sudo rm -rf /usr/local/go && sudo tar -C /usr/local -xzf go$GO_VERSION.linux-amd64.tar.gz
 
