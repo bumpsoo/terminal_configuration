@@ -17,6 +17,7 @@ return {
         "typescript",
         "vue",
         "go",
+        "yaml",
       },
     })
   end
