@@ -15,7 +15,7 @@ local config = function()
   end
   -- Enable some language servers with the additional
   -- completion capabilities offered by nvim-cmp
-  local servers = { 'gopls', 'erlangls'}
+  local servers = { 'gopls', 'clangd', 'tsserver', 'pyright'}
   for _, lsp in ipairs(servers) do
     lspconfig[lsp].setup {
       on_attach = on_attach,
@@ -28,8 +28,6 @@ local config = function()
     filetypes = {
       'typescript',
       'javascript',
-      'javascriptreact',
-      'typescriptreact',
       'vue',
       'json'
     },
