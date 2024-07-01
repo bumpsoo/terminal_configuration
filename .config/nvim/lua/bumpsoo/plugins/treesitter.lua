@@ -18,6 +18,7 @@ return {
         "vue",
         "go",
         "yaml",
+        'python',
       },
     })
   end
